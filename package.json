@@ -1,0 +1,23 @@
+{
+  "name": "@webdev-config/eslint",
+  "version": "0.0.1",
+  "description": "ESLint configuration to be shared across repositories.",
+  "main": "eslintrc.json",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webdev-config/eslint.git"
+  },
+  "author": "reaves-tyler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webdev-config/eslint/issues"
+  },
+  "homepage": "https://github.com/webdev-config/eslint#readme",
+  "keywords": [
+    "eslint",
+    "configuration"
+  ],
+  "dependencies": {
+    "eslint": "^7.12.1"
+  }
+}
