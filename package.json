@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "ESLint configuration to be shared across repositories.",
   "main": "eslintrc.json",
+  "scripts": {
+    "test": "eslint ./index.ts",
+    "fix": "eslint ./index.ts --fix"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/webdev-config/eslint.git"
@@ -22,5 +26,8 @@
     "@typescript-eslint/parser": "^4.6.1",
     "eslint": "^7.12.1",
     "typescript": "^4.0.5"
+  },
+  "eslintConfig": {
+    "extends": "./eslintrc.json"
   }
 }
