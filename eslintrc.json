@@ -1,38 +1,39 @@
 {
-    "parser": "@typescript-eslint/parser",
-    "plugins": ["@typescript-eslint"],
-    "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/eslint-recommended"
-    ],
-    "rules": {
-        "@typescript-eslint/explicit-function-return-type": "warn",
-        "@typescript-eslint/no-unused-vars": "warn",
-        "@typescript-eslint/no-var-requires": "warn",
-        "@typescript-eslint/no-explicit-any": "off",
-        "@typescript-eslint/no-inferrable-types": "off",
-        "@typescript-eslint/quotes": ["warn", "single"],
-        "@typescript-eslint/semi": ["warn","always"],
-        "@typescript-eslint/member-delimiter-style": [
-            "warn",
-            {
-                "multiline": {
-                    "delimiter": "comma",
-                    "requireLast": false
-                },
-                "overrides": {
-                    "interface": {
-                        "multiline": {
-                            "delimiter": "semi",
-                            "requireLast": true
-                        }
-                    }
-                }
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended"
+  ],
+  "rules": {
+    "@typescript-eslint/explicit-function-return-type": "warn",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-var-requires": "warn",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-inferrable-types": "off",
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/quotes": ["warn", "single"],
+    "@typescript-eslint/semi": ["warn", "always"],
+    "@typescript-eslint/member-delimiter-style": [
+      "warn",
+      {
+        "multiline": {
+          "delimiter": "comma",
+          "requireLast": false
+        },
+        "overrides": {
+          "interface": {
+            "multiline": {
+              "delimiter": "semi",
+              "requireLast": true
             }
-        ],
-        "prefer-const": "warn",
-        "semi": "off",
-        "quotes": "off"
-    }
+          }
+        }
+      }
+    ],
+    "prefer-const": "warn",
+    "semi": "off",
+    "quotes": "off"
+  }
 }
